@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our School</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            
+            <div class="dropdown">
+                <li><a href="#admission">
+                        <button class="dropbtn" onclick="dropDown()">Admission</button>
+                    </a>
+                </li>
+                <div class="dropdown-content" id="admissionDropDown">
+                    <a href="#">Online Application</a>
+                    <a href="#">Entrance Exam Results</a>
+                    <a href="#">Interview Dates</a>
+                    <a href="#">Enrollment</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our prestigious school where education meets excellence.</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We have a long history of providing quality education to our students.</p>
+    </section>
+    
+    <section id="admission">
+        <h2>Admission</h2>
+        <ul>
+            <li>Online Application</li>
+            <li>Entrance Exam</li>
+            <li>Interview</li>
+            <li>Enrollment</li>
+        </ul>
+    </section>
+    
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="School Image 1">
+            <img src="image2.jpg" alt="School Image 2">
+            <img src="image3.jpg" alt="School Image 3">
+            <img src="image4.jpg" alt="School Image 4">
+            <img src="image5.jpg" alt="School Image 5">
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <table>
+            <tr>
+                <th>Department</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Administration</td>
+                <td>(123) 456-7890</td>
+                <td>admin@school.com</td>
+            </tr>
+            <tr>
+                <td>Admissions</td>
+                <td>(123) 456-7891</td>
+                <td>admissions@school.com</td>
+            </tr>
+            <tr>
+                <td>Support</td>
+                <td>(123) 456-7892</td>
+                <td>support@school.com</td>
+            </tr>
+        </table>
+    </section>
+
+    
+    <button onclick="showAlert()">Click Me!</button>
+    
+    <footer>
+        <p>Our School</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
